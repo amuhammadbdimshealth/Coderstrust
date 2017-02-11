@@ -11,50 +11,68 @@
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
 </head>
   <body>
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Launch demo modal
-    </button>
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Launch demo modal
-    </button> -->
-    <!-- Modal -->
-    <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <!-- Practice demo Image triggered Modal -->
-    <div class="modal fade" id="kittenImg1Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="htmlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Who is Applify</h4>
+            <h4 class="modal-title" id="myModalLabel">What is HTML ?</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src = "http://placekitten.com/g/555/300">
-            <p>This is a demo modal description</p>
+            <img class="img-responsive" src="images/html1.png">
+            <p>HyperText Markup Language (HTML) is a markup language[1] for creating webpages.
+              Webpages are usually viewed in a web browser. They can include writing, links, pictures,
+               and even sound and video. HTML is used to mark and describe each of these kinds of content so the web browser can show them correctly.HTML can also be used to add meta information to a webpage. Meta information is information about the web page. For example
+              , the name of the person who made it. Meta information is not usually shown by web browsers.
+            </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </div>
+    </div><!-- htmlmodal -->
+
+    <div class="modal fade" id="cssModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">What is CSS ?</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/css1.png">
+            <p>
+              Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.[1] Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.[2]
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- cssmodal -->
+
+    <div class="modal fade" id="nodejsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">What is nodejs</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/node1.png">
+            <p>
+              Node.js is an open-source, cross-platform JavaScript runtime environment for developing a diverse variety of server tools and applications. Although Node.js is not a JavaScript framework,[4] many of its basic modules are written in JavaScript, and developers can write new modules in JavaScript. The runtime environment interprets JavaScript using Google's V8 JavaScript engine.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- nodejsmodal -->
 
 
     <div class="container">
@@ -83,15 +101,15 @@
         </div>
       </div>
       <div class="row interest text-center">
-        <div class="col-md-4" data-toggle="modal" data-target="#kittenImg1Modal">
+        <div class="col-md-4" data-toggle="modal" data-target="#htmlModal">
           <img class="img-responsive" ssrc = "http://placekitten.com/g/555/300" src="images/html1.png">
           <h3>Html</h3>
         </div>
-        <div class="col-md-4" data-toggle="modal" data-target="#kittenImg1Modal">
+        <div class="col-md-4" data-toggle="modal" data-target="#cssModal">
           <img class="img-responsive" ssrc = "http://placekitten.com/g/555/300" src="images/css1.png">
           <h3>Css</h3>
         </div>
-        <div class="col-md-4" data-toggle="modal" data-target="#kittenImg1Modal">
+        <div class="col-md-4" data-toggle="modal" data-target="#nodejsModal">
           <img class="img-responsive" ssrc = "http://placekitten.com/g/555/300" src="images/node1.png">
           <h3>NodeJs</h3>
         </div>

@@ -1,0 +1,46 @@
+*{
+  /*border: solid 1px red;*/
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+  padding: 40px;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+}
+.col-4-md{
+  width: 33.33%;
+}
+.col-6-md{
+  width: 50%;
+}
+.col-12-md{
+  width: 100%;
+}
+
+.title{
+  border-bottom: solid grey 5px;
+  margin-bottom: 10px;
+}
+.title .profile-pic img{
+  width: 100%;
+  height: 200px;
+}
+.title .name{
+  text-align: right;
+}
+.advertisement{
+  background-image: url("http://placekitten.com/1000/350");
+  height: 500px;
+}
+.details img{
+  padding: 10px;
+  width: 100%;
+}

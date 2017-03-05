@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What I Know About Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+      *{
+        /*border: solid 1px red;*/
+      }
+      body{
+        padding-top: 100px;
+      }
+      .top-bar{
+        height: 30px;
+        background: green;
+        color: white;
+        padding: 5px 15px;
+      }
+      .navbar-brand{
+        max-width: 300px;
+      }
+      #iou-navbar-collapse a:hover{
+        background-color: #63be78;
+      }
+      .slider-area{
+        background-color: #63be78;
+        margin-bottom: 20px;
+        color: white;
+      }
+      .slider-area .slider-img{
+        margin: 0 auto;
+      }
+      .content-area .course-categories{
+        background: honeydew;
+      }
+      .content-area .course-categories .category{
+        height: 280px;
+        margin-bottom: 20px;
+        border: 4px solid #5DBB71;
+        border-radius: 20px;
+      }
+      .content-area .course-categories .category .category-title{
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #27736F;
+      }
+      .content-area .course-categories .category  .category-icon{
+        /*font-size: 50px;*/
+        color: #3c5b54;
+        text-align: center;
+      }
+      .category-desc{
+        font-size: 12px;
+        color: #3c5b54;
+        text-align: center;
+      }
+      .course-images a.thumbnail{
+        /*background-color: black;*/
+        padding-top: 75%;
+        position: relative;
+        box-sizing: border-box;
+      }
+      .course-images a.thumbnail > img{
+        /* fit within container */
+        /*max-width: 100%;*/
+        width: 100%;  /*I have added this so that the images take up 100% of the parent container*/
+        max-height: 100%;
+        /* center align */
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .course-images a.thumbnail > .img-desc{
+        /* fit within container */
+        max-width: 100%;
+        max-height: 100%;
+        /* center align */
+        position: absolute;
+        left: 0;
+        /*top: 0;*/
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        /*center text*/
+        text-align: center;
+        /*color setting*/
+        color: white;
+        background-color: #5cb85c;
+        opacity: 0.8;
+
+      }
+      .footer-area{
+        background-color: #252525;
+        color: yellow;
+      }
+      .footer-area .footer-nav{
+        margin-top: 10px;
+        line-height: 1.7;
+      }
+      .footer-area .footer-nav .nav-links{
+        list-style: none;
+        padding: 0;
+      }
+      .footer-area .footer-nav h6{
+        border-bottom: solid 1px yellow;
+      }
+      .footer-area .footer-nav .nav-links li > a{
+        display: block;
+        text-decoration: none;
+        border-bottom: solid 1px #5F6366;
+        color: white;
+        font-size: 13px;
+      }
+      .footer-area .footer-nav .contact-details{
+        color: white;
+        font-size: 13px;
+      }
+      .footer-area .footer-nav .nav-links li > a:hover{
+        background: #a5a548;
+      }
+
+
+
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="top-bar text-right">
+        Logged in as Arif Mohammad
+      </div>
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- <div class="row"> -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#iou-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="../images/logo.png" class="img-responsive" alt="IOU-Brand-Image">
+            </a>
+          </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="iou-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Registration</a></li>
+              <li><a href="#">Donate</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">IOU Main</a></li>
+            </ul>
+            <!-- <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Link-Right</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul> -->
+          </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+      <div class="slider-area row">
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-md-7 col-sm-7" id="welcome-header">
+              <h1>Welcome to Diploma Section</h1>
+              <p>Embark on your journey into the world of knowledge with a series of short
+                but comprehensive courses in a structured program of study arranged by Dr.
+                Bilal Philips himself.
+              </p>
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <img class="img-responsive hidden-xs slider-img" src="../images/SliderImage2.png" alt="slider-image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-area">
+        <div class="row course-categories">
+          <div class="col-md-6 col-sm-6">
+            <div class="category">
+              <p class="category-title text-center">New Muslim Free Certificate & Diploma Course</p>
+              <p class="category-icon"><i class="fa fa-book fa-5x" aria-hidden="true"></i></p>
+              <p class="category-desc text-center">The New Muslim courses explain some of the most important points that the new Muslims
+                 should be conscious of on the very first day and week of their conversion to Islam.
+               </p>
+              <p class="text-center">
+                <button type="button" name="button" class="btn btn-success btn-lg btn-block">View Courses</button>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="category">
+              <p class="category-title text-center">New Muslim Free Certificate & Diploma Course</p>
+              <p class="category-icon"><i class="fa fa-mortar-board fa-5x" aria-hidden="true"></i></p>
+              <p class="category-desc text-center">The New Muslim courses explain some of the most important points that the new Muslims
+                 should be conscious of on the very first day and week of their conversion to Islam.
+               </p>
+              <p class="text-center">
+                <button type="button" name="button" class="btn btn-success btn-lg btn-block">View Courses</button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="featured-courses">
+          <div class="row courses-header">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <h3 class="text-left">Featured Courses</h3>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <h3 class="text-right">
+                <button class="btn btn-primary btn-bg"type="button" name="All-courses-button">
+                  All Courses
+                </button>
+              </h3>
+            </div>
+          </div>
+          <div class="row course-images">
+            <div class="col-md-3 col-sm-4 col-xs-6">
+              <a href="#" class="thumbnail">
+                <img class="img-responsive"src="../images/featured-courses/course1-parenting.jpg" alt="">
+                <p class="img-desc">Visionary parents</p>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+              <a href="#" class="thumbnail">
+                <img class="img-responsive"src="../images/featured-courses/course2-islamization-of-education.png" alt="">
+                <p class="img-desc">Islamization of Education</p>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+              <a href="#" class="thumbnail">
+                <img class="img-responsive"src="../images/featured-courses/course3-40Pearls.jpg" alt="">
+                <p class="img-desc">40 Pearls</p>
+              </a>
+            </div>
+            <!-- <div class="clearfix visible-xs"></div> -->
+            <div class="col-md-3 col-sm-4 col-xs-6">
+              <a href="#" class="thumbnail">
+                <img class="img-responsive"src="../images/featured-courses/course4-Poster_Speech-Arabic01.jpg" alt="">
+                <p class="img-desc">Arabic Speech Simplified</p>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+              <a href="#" class="thumbnail">
+                <img class="img-responsive"src="../images/featured-courses/course5-islamic-cylture.jpg" alt="">
+                <p class="img-desc">Islamic Culture</p>
+              </a>
+            </div>
+            <!-- <div class="clearfix visible-xs"></div>
+            <div class="clearfix visible-md"></div> -->
+            <div class="col-md-3 col-sm-4 col-xs-6">
+              <a href="#" class="thumbnail">
+                <img class="img-responsive"src="../images/featured-courses/course6-FirstDay.jpg" alt="">
+                <p class="img-desc">The First Day</p>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+              <a href="#" class="thumbnail">
+                <img class="img-responsive"src="../images/featured-courses/course7-first-week.jpg" alt="">
+                <p class="img-desc">The First Week</p>
+              </a>
+            </div>
+            <!-- <div class="clearfix visible-xs"></div> -->
+            <div class="col-md-3 col-sm-4 col-xs-6">
+              <a href="#" class="thumbnail">
+                <img class="img-responsive"src="../images/featured-courses/course8-leadership.jpg" alt="">
+                <p class="img-desc">Leadership Lessons</p>
+              </a>
+            </div>
+
+
+          </div><!-- course-images -->
+        </div> <!-- featured-courses -->
+      </div> <!-- content-area -->
+    </div><!-- container -->
+    <div class="footer-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-12-xs footer-nav">
+            <h6>LINKS</h6>
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Registration</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Certificate</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-4 col-12-xs footer-nav">
+            <h6>CONTACT INFO</h6>
+            <div class="contact-details">
+              <p>21 Kanifing Mosque Road, P.O. Box 2340,</p>
+              <p>Kanifing South, KMC, The Gambia.</p>
+              <p>+220-4379687 / +220-9666612</p>
+              <p>info@iou.edu.gm</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-12-xs footer-nav">
+            <h6>LAMINATED HARD COPIES</h6>
+            <img class="img-responsive" src="../images/footer/certificate-banner-small.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div> <!-- footer-area -->
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
